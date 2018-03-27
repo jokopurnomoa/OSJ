@@ -1,0 +1,13 @@
+{"name" : "OSJ Dev Tools",
+"width" : "1000",
+"height" : "600",
+"posX" : "150",
+"posY" : "0",
+"image" : "system/applications/osj_dev_tools/images/osj-dev-tools.png",
+"iconId" : "desktop-programs-osj-dev-tools",
+"programContainer" : "osj-dev-tools-container",
+"programId" : "osj_dev_tools",
+"programTop" : "top-osj-dev-tools",
+"programMenu" : "menu-osj-dev-tools",
+"programBody" : "body-osj-dev-tools",
+"maximize" : true }

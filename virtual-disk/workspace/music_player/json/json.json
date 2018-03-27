@@ -1,0 +1,13 @@
+{"name" : "Music Player",
+"width" : "261",
+"height" : "300",
+"posX" : "375",
+"posY" : "50",
+"image" : "system/applications/music_player/images/music_player.png",
+"iconId" : "desktop-programs-music-player",
+"programContainer" : "music-player-container",
+"programId" : "music_player",
+"programTop" : "top-music-player",
+"programMenu" : "menu-music-player",
+"programBody" : "body-music-player",
+"maximize" : false }

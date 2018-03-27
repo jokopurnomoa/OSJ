@@ -1,0 +1,45 @@
+﻿[UpArrow]
+Path=Mac os alternitve select.cur
+
+[Help]
+Path=Mac os Help select.cur
+
+[AppStarting]
+Path=Mac os Working in background.ani
+
+[Wait]
+Path=Mac os Busy.ani
+
+[Crosshair]
+Path=Mac os Precision Select.cur
+
+[IBeam]
+Path=Mac os Text Select.cur
+
+[NWPen]
+Path=Mac os Hand writing.cur
+
+[No]
+Path=Mac os Unavailible.cur
+
+[SizeNS]
+Path=Mac os Vertical Resize.cur
+
+[SizeWE]
+Path=Mac os Horizontal Resize.cur
+
+[SizeNWSE]
+Path=Mac os Diagonal resize 1.cur
+
+[SizeNESW]
+Path=Mac os Diagonal resize 2.cur
+
+[SizeAll]
+Path=Mac os Move.cur
+
+[Hand]
+Path=Mac os Link select.cur
+
+[Arrow]
+Path=Mac os Normal select.cur
+

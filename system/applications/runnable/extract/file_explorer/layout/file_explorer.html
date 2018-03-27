@@ -1,0 +1,298 @@
+<style type="text/css">
+#menu-explorer{
+	background:#111;
+}
+#menu-visual-explorer{
+	height:100px;
+	width:100%;
+	border-bottom:1px solid #CCC;
+}
+#body-explorer{
+	background:rgba(255,255,255,1);
+	position:absolute;
+	width:100%;
+	height:79.2%;
+}
+#tb-explorer tr td{
+	vertical-align:top;
+}
+#tb-explorer-left{
+	padding-left:10px;
+}
+#body-explorer-left{
+	background:none;
+	border-right:1px solid #CCC;
+	position:absolute;
+	width:200px;
+	height:100%;
+	overflow:auto;
+	top:0px;
+	left:0px;
+}
+#body-explorer-left img{
+	margin-left:5px;
+}
+#body-explorer-right{
+	position:absolute;
+	width:600px;
+	height:100%;
+	overflow:auto;
+	top:0px;
+	left:200px;
+	margin-left:1px;
+}
+.dir{
+	width:100%;
+	padding-left:10px;
+	padding-top:1px;
+	padding-bottom:2px;
+	display:block;
+	font-size:15px;
+	border-bottom:1px solid #ECF2FE;
+	border:1px solid rgba(0,0,0,0);
+	cursor:url(system/images/cursor/normal.cur), progress !important;
+}
+.dir:hover{
+	border:1px solid rgba(45, 98, 185, 0.5);
+	background:rgba(47,157,247,1);
+	color:#FFF;
+}
+.nav-dir{
+	height:12px;
+	width:12px;
+	border-radius:10px;
+	position:relative;
+	top:1px;
+	background:url(system/applications/runnable/extract/file_explorer/images/dir-close.png);
+}
+.nav-dir:hover{
+	background:url(system/applications/runnable/extract/file_explorer/images/dir-hover.png);
+}
+.dir .directory{
+	position:relative;
+	top:2px;
+}
+.draft-dir{
+	height:110px;
+	width:90px;
+	display:block;
+	border:1px solid transparent;
+	float:left;
+	margin-left:5px;
+	margin-top:5px;
+	font-size:13px;
+	position:relative;
+	left:10px;
+	top:10px;
+	padding:2px 2px 2px 2px;
+	cursor:url(system/images/cursor/normal.cur), progress !important;
+}
+.draft-dir:hover > .draft-dir-title{
+	background:rgba(47,157,247,1);
+	/*border:1px solid rgba(45, 98, 185, 0.5);*/
+	color:#FFF;
+}
+.draft-dir-img{
+	height:35px;
+	width:35px;
+	display:block;
+	position:relative;
+	left:27px;
+	top:0px;
+}
+.draft-dir-title{
+	text-align:center;
+	overflow:hidden;
+	padding: 3px;
+	border-radius: 4px;
+	margin-top: 2px;
+}
+#back-next-explorer{
+	height:40px;
+	width:70px;
+	position:relative;
+	top:60px;
+	left:10px;
+}
+#back-directory-explorer{
+	height:30px;
+	width:30px;
+	float:left;	
+	position:relative;
+	top:5px;
+}
+#back-directory-explorer:hover{
+	height:40px;
+	width:40px;
+	top:0px;
+}
+#next-directory-explorer{
+	height:30px;
+	width:30px;
+	float:right;	
+	position:relative;
+	top:5px;
+}
+#next-directory-explorer:hover{
+	height:40px;
+	width:40px;
+	top:0px;
+}
+#body-explorer-left #refresh{
+	 position:relative;
+	 top:-18px;
+	 left:130px;
+	 height:18px;
+	 width:18px;
+	 display:block;
+	 margin-bottom: -15px; 
+	 background: url(system/applications/runnable/extract/file_explorer/images/refresh-icon.png);
+}
+#body-explorer-left #refresh:hover{
+	 background: url(system/applications/runnable/extract/file_explorer/images/refresh-icon-h.png);
+}
+#this-directory{
+	position: relative;
+	top:30px;
+	left:100px;
+	font-size: 14px;
+	width:60%;
+}
+#directory-search{
+	width:170px;
+	height:20px;
+	position:absolute;
+	right:20px;
+	top:90px;
+	border:1px solid #CCC;
+	border-radius:2px;
+}
+#directory-search input{
+	height:12px;
+	margin-left:4px;
+	border:none;
+	box-shadow:none;
+	padding-left:5px;
+	font-family:Lucida Sans, Lucida Grande, Arial, Helvetica, sans-serif;
+	color:#333;
+	font-size:13px;
+}
+#explorer-new-folder{
+	display:block;
+	position: fixed;
+	top:100px;
+	left:300px;
+	height: 200px;
+	width: 500px;
+	background: #333;
+	border-top-left-radius: 7px;
+	border-top-right-radius: 7px;
+	
+}
+.explorer-rdir{
+	height: 30px;
+	padding: 6px 3px;
+	background: url(system/images/header/lines.png);
+	border: 1px solid #a3a3a3;
+	border-radius: 4px;
+	margin-left: 5px;
+	box-shadow:0 0 1px 0 rgba(200,200,200,1);
+	text-shadow:1px 1px 3px rgba(230,230,230,1);
+}
+.explorer-rdir:hover{
+	background: url(system/images/header/lines.png) 0 -50px ;
+	border: 1px solid #7c7c7c;
+}
+#progress-bar-explorer{
+    display: block;
+    position: fixed;
+    top: -2000px;
+    left: -2000px;
+    height: 130px;
+    width: 500px;
+    background: #FFF;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    box-shadow:0px 10px 20px 1px rgba(0,0,0,0.5);
+    opacity: 0;
+}
+
+#progress-bar-explorer #program-explorer{
+    margin: 10px;
+}
+
+#progress-bar-explorer #progressbar-explorer{
+    height:20px;
+    width:100%;
+    margin-top: 10px;
+    background:#FFF;
+    border-radius:10px;
+    border:1px solid #666;
+}
+#progress-bar-explorer .progress-label{
+    width:100%;
+    text-align: center;
+    text-shadow: 1px 2px 1px rgba(0,0,0,0.5);
+    position: absolute;
+    font-size: 14px;
+    color: #FFF;
+}
+#progress-bar-explorer #progressbar-explorer .ui-progressbar-value {
+    border-radius:15px;
+    box-shadow:inset 0px 0px 7px 1px rgba(0,0,255,1);
+    background: #2f9df7;
+    height:21px;
+}
+</style>
+
+<div id='explorer-container' class='ui-widget-content application-container'>
+   	   	<div class='ui-widget-header'>
+            <div class="application-header">
+                <div id='exit-explorer' class="application-exit"> </div>
+                <div id='minimize-explorer' class="application-minimize"> </div>
+                <div id='maximize-explorer' class="application-maximize"> </div>
+                <div style="text-align: center;"><span>File Explorer</span></div>
+            </div>
+    	</div>
+        <div id="menu-visual-explorer">
+        	<div id="back-next-explorer">
+        		<img src="system/applications/runnable/extract/file_explorer/images/back.png" id='back-directory-explorer'/>
+        		<img src="system/applications/runnable/extract/file_explorer/images/next.png" id='next-directory-explorer'/>
+            </div>
+            <div id="this-directory"> </div>
+            <div id="directory-search">
+            	<input type="text" onkeyup="explorerSearch()"/>
+                <img src="system/applications/runnable/extract/file_explorer/images/search.png" />
+            </div>
+        </div>
+        <div id="body-explorer">
+        	<table id="tb-explorer">
+            	<tr>
+                	<td id="tb-explorer-left">
+                    	<div id="body-explorer-left">
+                        </div>
+                        
+                    </td>
+                    <td id="tb-explorer-right">
+                    	<div id="body-explorer-right">
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div id="progress-bar-explorer">
+            <div class='ui-widget-header'>
+                <div class="application-header">
+                    <div id='progress-bar-explorer-exit' class="application-exit"></div>
+                    <div style="text-align: center;"><span>File Explorer</span></div>
+                </div>
+            </div>
+            <div id="program-explorer">
+                <div id="progress-label-explorer">
+                    Stopped
+                </div>
+                <div id="progressbar-explorer"><div class="progress-label">100%</div></div>
+            </div>
+        </div>
+    </div>
+</div>

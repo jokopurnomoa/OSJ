@@ -1,0 +1,13 @@
+{"name" : "Image Viewer",
+"width" : "700",
+"height" : "500",
+"posX" : "375",
+"posY" : "50",
+"image" : "system/applications/image_viewer/images/image_viewer.png",
+"iconId" : "desktop-programs-image-viewer",
+"programContainer" : "image-viewer-container",
+"programId" : "image_viewer",
+"programTop" : "top-image-viewer",
+"programMenu" : "menu-image-viewer",
+"programBody" : "body-image-viewer",
+"maximize" : false}

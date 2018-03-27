@@ -1,0 +1,108 @@
+/*--------------------------------- TOP MENU AREA ---------------------------------------*/
+
+#top-menu{
+	position:fixed;
+	height:24px;
+	width:100%;
+	font-size:15px;
+	background:url(../../images/header/lines.png);
+	box-shadow:0 1px 5px 5px rgba(0,0,0,0.5);
+	top:0;
+	left:0;
+	z-index:100;
+	cursor:default;
+}
+
+#top-menu-item0{
+	font-weight:bold;
+}
+.top-menu-item{
+	position:relative;
+	left:30px;
+	top:2px;
+	/*
+	background:rgba(45, 98, 185, 0.7);
+	color:#FFF;*/
+	padding:3px 15px;
+	padding-bottom:2px;
+	line-height:10px;
+	margin-left:-5px;
+}
+.top-menu-item-down{
+	visibility:hidden;
+	position:absolute;
+	left:55px;
+	margin-top:4px;
+	height:auto;
+	width:250px;
+	background:rgba(255,255,255,0.95);
+	list-style-type:none;
+	padding:3px 0;
+	border-top:1px solid #ccc;
+	box-shadow:0 5px 10px 1px rgba(0,0,0,0.5);
+}
+.top-menu-item-down li{
+	padding:0px 5px 1px 20px;
+}
+.top-menu-item-down li:hover{
+	background:url(../../images/header/gradient-blue.png);
+	color:#FFF;
+}
+.top-menu-item-down li ul{
+	visibility:hidden;
+	width:250px;
+	margin-bottom: -25px;
+	padding:3px 0;
+	position: absolute;
+	top:-1px;
+	left:250px;
+	color:#000;
+	border-top:1px solid #ccc;
+	background:rgba(255,255,255,0.95);
+	box-shadow:0 5px 10px 1px rgba(0,0,0,0.5);
+}
+.top-menu-item-down li ul li{
+	list-style-type: none;
+	margin-left: 0px;
+}
+#clock-top{
+	display: block;
+	height: 25px;
+	width: 80px;
+	padding:0 5px;
+	position:fixed;
+	top:0;
+	right:25px;
+	line-height: 25px;
+	z-index: 100;
+	cursor: default;
+	font-size: 15px;
+	font-weight: bold;
+}
+
+#right-click-menu{
+	display: block;
+	position: fixed;
+	top:-1000px;
+	left:-1000px;
+	background: #FFF;
+	box-shadow:0px 4px 5px 0px rgba(0,0,0,0.5);	
+	border-radius: 5px;
+	padding: 5px 0;
+	z-index: 100; 
+}
+#right-click-menu .item{
+	padding: 0 30px;
+}
+#right-click-menu .separator{
+	height: 0;
+	width:100%;
+	position:relative;
+	left:-5px;
+	border-bottom: 1px solid #CCC;
+	margin: 5px; 0;
+}
+#right-click-menu .item:hover{
+	background: url(../../images/header/gradient-blue.png);
+	color:#FFF;
+}

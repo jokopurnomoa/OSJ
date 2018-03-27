@@ -1,0 +1,224 @@
+<style type="text/css">
+#image_viewer-container{
+	background:#FFF;
+}
+#top-image-viewer{
+	display:block;
+	position:relative;
+	height:20px;
+	width:100%;
+	background:#111;
+	border-bottom:1px solid #CCC;
+}
+#menu-image-viewer{
+	display:block;
+	position:relative;
+	height:20px;
+}
+#body-image-viewer{
+	border:none;
+	height:60%;
+	width:100%;
+	font-size:12px;
+	z-index:-1;
+	text-align:center;
+	vertical-align:middle;
+}
+#input-filename-image-viewer{
+	position:fixed;
+	display:block;
+	height:70px;
+	width:300px;
+	top:200px;
+	left:500px;
+	background:#FFF;
+	z-index:99;
+	padding:20px 10px;
+	border-radius:10px;
+	box-shadow:0px 5px 20px 1px rgba(0,0,0,0.9);
+	visibility:hidden;
+}
+#filename-image-viewer-text{
+	margin-left:10px;
+	padding:0 5px;
+	width:200px;
+	height:20px;
+	border:1px solid #CCC;
+	border-radius:15px;
+}
+.image-viewer-button{
+	width:100px;
+	height:25px;
+	margin-top:20px;
+	float:right;
+	margin-right:20px;
+	position:relative;
+	right:-20px;
+	border:1px solid #CCC;
+}
+#menu-visual-image-viewer{
+	height:80px;
+	width:100%;
+	background:#FFF;
+	border-bottom:1px solid #CCC;
+}
+#back-next-image-viewer{
+    height:40px;
+    width:110px;
+    position:relative;
+    top:40px;
+    left:10px;
+}
+#previous-image-viewer{
+    padding:3px 7px;
+	position:relative;
+	top:5px;
+	left:5px;
+	background:url(system/images/header/lines.png);	
+	display:inline;
+	border:1px solid #CCC;
+	border-right:none;
+	border-top-left-radius:3px;
+	border-bottom-left-radius:3px;
+	box-shadow:0 0 1px 0 rgba(200,200,200,1);
+}
+#previous-image-viewer:hover{
+	padding:3px 5px;
+	box-shadow:inset 0 0 1px 1px #2681d2;
+	border:1px solid #2681d2;
+	font-weight:bold;
+}
+#next-image-viewer{
+    padding:3px 7px;
+	position:relative;
+	top:5px;
+	background:url(system/images/header/lines.png);
+	display:inline;
+	border:1px solid #CCC;
+	border-top-right-radius:3px;
+	border-bottom-right-radius:3px;
+	box-shadow:0 0 1px 0 rgba(200,200,200,1);
+}
+#next-image-viewer:hover{
+	padding:3px 6px;
+    box-shadow:inset 0 0 1px 1px #2681d2;
+	border:1px solid #2681d2;
+	font-weight:bold;
+}
+#rotate-image-viewer{
+    height:30px;
+    width:80px;
+    position:absolute;
+    top:66px;
+    left:150px;
+}
+#rotate-clockwise{
+	padding:3px 7px;
+	position:relative;
+	left:-5px;
+	background:url(system/images/header/lines.png);	
+	display:inline;
+	border:1px solid #CCC;
+	border-right:none;
+	border-top-right-radius:3px;
+	border-bottom-right-radius:3px;
+	box-shadow:0 0 1px 0 rgba(200,200,200,1);
+}
+#rotate-clockwise:hover{
+	box-shadow:inset 0 0 1px 1px #2681d2;
+	border:1px solid #2681d2;
+}
+#rotate-counterclockwise{
+	padding:3px 7px;
+	position:relative;
+	background:url(system/images/header/lines.png);	
+	display:inline;
+	border:1px solid #CCC;
+	border-right:none;
+	border-top-left-radius:3px;
+	border-bottom-left-radius:3px;
+	box-shadow:0 0 1px 0 rgba(200,200,200,1);
+}
+#rotate-counterclockwise:hover{
+	padding-right:6px;
+	box-shadow:inset 0 0 1px 1px #2681d2;
+	border:1px solid #2681d2;
+}
+#zoom-image-viewer{
+    height:30px;
+    width:120px;
+    position:absolute;
+    top:64px;
+    left:255px;
+    font-weight: bold;
+}
+#zoom-plus-image-viewer{
+	padding:3px 7px;
+	position:relative;
+	left:-5px;
+	top:5px;
+	background:url(system/images/header/lines.png);	
+	display:inline;
+	border:1px solid #CCC;
+	border-right:none;
+	border-top-right-radius:3px;
+	border-bottom-right-radius:3px;
+	box-shadow:0 0 1px 0 rgba(200,200,200,1);
+}
+#zoom-plus-image-viewer:hover{
+	box-shadow:inset 0 0 1px 1px #2681d2;
+	border:1px solid #2681d2;
+}
+#zoom-min-image-viewer{
+	padding:3px 9px;
+	position:relative;
+	top:5px;
+	background:url(system/images/header/lines.png);	
+	display:inline;
+	border:1px solid #CCC;
+	border-right:none;
+	border-top-left-radius:3px;
+	border-bottom-left-radius:3px;
+	box-shadow:0 0 1px 0 rgba(200,200,200,1);
+}
+#zoom-min-image-viewer:hover{
+	padding-right:8px;
+	box-shadow:inset 0 0 1px 1px #2681d2;
+	border:1px solid #2681d2;
+}
+#zoom-info-image-viewer{
+	position:relative;
+	top:5px;
+}
+#image-viewer-img{
+    box-shadow:0 0 3px 0px rgba(0,0,0,0.5);
+	border-radius:3px;
+    visibility: hidden;
+}
+</style>
+<div id='image_viewer-container' class='ui-widget-content application-container'>
+   	<div class='ui-widget-header'>
+	   	<div class="application-header">
+            <div id='exit-image-viewer' class="application-exit"></div>
+            <div id='minimize-image-viewer' class="application-minimize"></div>
+       		<div id='maximize-image-viewer' class="application-maximize"></div>
+            <div align="center"><span>Image Viewer</span></div>
+       	</div>
+       	<div id="menu-visual-image-viewer">
+            <div id="back-next-image-viewer">
+                <span id='previous-image-viewer' onmousedown="ImageViewer.getPrevImage()">Prev</span>
+                <span id='next-image-viewer' onmousedown="ImageViewer.getNextImage()">Next</span>
+            </div>
+            <div id="rotate-image-viewer">
+            	<img src="system/applications/image_viewer/images/rotate2.png" id="rotate-counterclockwise" onmousedown="ImageViewer.rotateCounterClockwise()"/>
+            	<img src="system/applications/image_viewer/images/rotate1.png" id="rotate-clockwise" onmousedown="ImageViewer.rotateClockwise()"/>
+            </div>
+            <div id="zoom-image-viewer">
+                <span id='zoom-min-image-viewer' onmousedown="ImageViewer.zoomMin()">-</span>
+                <span id='zoom-plus-image-viewer' onmousedown="ImageViewer.zoomPlus()">+</span>
+                <span id='zoom-info-image-viewer'></span>
+            </div>
+       	</div>
+    </div>
+    <div id='body-image-viewer'></div>
+</div>

@@ -1,0 +1,10 @@
+[["notepad",".txt","system/applications/notepad/images/notepad.png"],
+["notepad",".php","system/applications/notepad/images/notepad.png"],
+["browser",".html","system/applications/browser/images/browser.png"],
+["image_viewer",".png","system/applications/image_viewer/images/png-type.png"],
+["image_viewer",".jpg","system/applications/image_viewer/images/jpg-type.png"],
+["notepad",".png","system/applications/notepad/images/notepad.png"],
+["image_viewer",".jpeg","system/applications/image_viewer/images/jpg-type.png"],
+["image_viewer",".gif","system/applications/image_viewer/images/gif-type.png"],
+["installer",".dapp","system/applications/installer/images/installer.png"],
+["music_player",".mp3","system/applications/music_player/images/music_player.png"]]

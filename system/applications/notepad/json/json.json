@@ -1,0 +1,1 @@
+{"name" : "Notepad","width" : "600","height" : "400","posX" : "375","posY" : "0","image" : "system/applications/notepad/images/notepad.png","iconId" : "desktop-programs-notepad","programContainer" : "notepad-container",	"programId" : "notepad","programTop" : "top-notepad","programMenu" : "menu-notepad","programBody" : "body-notepad",	"maximize" : false }

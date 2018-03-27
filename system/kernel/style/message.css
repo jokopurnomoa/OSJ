@@ -1,0 +1,73 @@
+.system-message{
+	height:150px;
+	width:380px;
+	position:fixed;
+	top:190px;
+	left:470px;
+	background:#FFF;
+	z-index:98;
+	border-radius:10px;
+	box-shadow:0px 5px 10px 0px rgba(0,0,0,0.9);
+	visibility:hidden;
+}
+.system-message .message-exit{
+	background: url(../../images/header/control.png) -84px 0;
+	height:14px;
+	width:10px;
+	border:none;
+	padding-left:4px;
+	border-radius: 10px;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	float:left;
+	margin-left:5px;
+	margin-right:10px;
+	cursor:url(../../images/cursor/normal.cur), progress !important;
+	line-height:15px;
+}
+.system-message .message-exit:hover{
+	background: url(../../images/header/control.png) -98px 0;
+}
+.system-message .title-outer{
+	height: 20px;
+	width:360px;
+	position: relative;
+	top:0;
+	left:0;
+	background:#333;
+	border-top-left-radius: 9px;
+	border-top-right-radius: 9px;
+	color:#fff;
+	padding: 5px 10px;
+}
+.system-message .value{
+	display:block;
+	height:80px;
+	width:370px;
+	text-align:center;
+	vertical-align:middle;
+	margin-top:5px;
+	margin-left:5px;
+}
+
+.system-message button{
+	height:25px;
+	width:100px;
+	border:1px solid #999;
+	float:right;
+	position:relative;
+	top:-20px;
+	right:10px;
+	background:url(../../images/button/aqua.png);
+	color:#FFF;
+	text-shadow:1px 1px 2px rgba(0,0,0,0.8);
+	box-shadow: none;
+    margin-right: 5px;
+}
+
+.system-message button:active{
+	box-shadow:inset 0 0 2px 1px rgba(50, 180, 200, 1);
+}
+.system-message button:hover{
+	box-shadow:inset 0px 0px 7px 1px rgba(0,0,255,1);
+}

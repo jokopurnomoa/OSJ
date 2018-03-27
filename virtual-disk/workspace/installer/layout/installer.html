@@ -1,0 +1,73 @@
+<style type="text/css">
+#installer-container #installer-container-top-left{
+	font-size:14px;
+	color:#FFF;
+	font-weight:bold;
+	padding-left:10px;
+}
+#installer-container #installer-label{
+	font-size:14px;
+	color:#000;
+	font-weight:bold;
+	margin:10px;	
+}
+#installer-container #installer-cancel, #installer-container #installer-close{
+	height:25px;
+	width:100px;
+	border:1px solid #777;
+	border-radius:15px;
+	position:relative;
+	color:#FFF;
+	margin-right:10px;
+	background:url(system/images/button/aqua.png);
+	font-weight:bold;
+    text-shadow: 1px 1px 1px #333;
+}
+#installer-container #installer-close{
+	margin-right:-100px;
+	visibility:hidden;
+}
+#installer-container #installer-cancel:hover, #installer-container #installer-close:hover{
+	box-shadow:inset 0px 0px 7px 1px rgba(0,0,255,1);
+}
+#installer-container #progressbar{
+	height:20px;
+	width:580px;
+	margin-left:10px;
+	background:#FFF;
+	border-radius:10px;
+	border:1px solid #666;
+}
+#installer-container .progress-label {
+    margin-left:10px;
+    margin-top: 15px;
+    font-weight: bold;
+    font-size:80%;
+	line-height:10px;
+	color:#000;
+}
+#installer-container #progressbar .ui-progressbar-value {
+	border-radius:15px;
+	box-shadow:inset 0px 0px 7px 1px rgba(0,0,255,1);
+    background: #031840;
+	height:21px;
+}
+</style>
+<div style="position: absolute; top: 10px; left: 10px; width: 604px; height: 198px;" id="installer-container" class="application-container  ">
+	<div class="ui-widget-header">
+	   	<div class="application-header">
+            <div id="exit-installer" class="application-exit"></div>
+       		<div id="minimize-installer" class="application-minimize"></div>
+            <center><span>Application Installer</span></center>
+       	</div>
+    </div>
+    <div id="program-installer">
+	    <div id="installer-label">
+    		Stopped
+	    </div>
+    	<div id="progressbar"></div>
+        <div class="progress-label"></div>
+	    <button id="installer-cancel">Cancel</button>
+    	<button id="installer-close">Close</button>
+    </div>
+</div>    

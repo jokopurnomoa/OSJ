@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html  lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>Link Me</title>
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="library/css/main.css">
+    
+    <!-- JQUERY -->
+    <script src="library/jquery/jquery-1.9.1.min.js"></script>
+</head>
+<body>
+	<div id="header">
+    	<div id="header-logo">
+        	<center>
+	           	<table width="630" border="0">
+    	        	<tr>
+        	        	<td>Link Me</td>
+            	    </tr>
+            	</table>
+            </center>
+        </div>
+        <center>
+    <table class="conten-table-login">
+    	<tr>
+    		<td>
+    			<div id="contens-login">
+                	<h1>Link Me Login</h1>
+        			<form name="login" action="library/php/ValidateLogin.php" method="post">
+                    	<label>Username</label><br>
+                        <input type="text" name="username" class="textfield"><br>
+                        <label>Password</label><br>
+                        <input type="password" name="password" class="textfield" style="font-size:10px"><br>
+                        <input type="submit" value="Login" class="login-button"><input type="reset" value="Batal" class="login-button">
+                    </form>
+                    <br>
+                    <p>
+                    	Belum punya akun? daftar disini
+                    </p>
+    			</div>
+    		</td>
+    	</tr>
+    </table>
+    </center>
+    </div>
+    <script language="javascript">
+		var Interval = 100;	
+		function Resize(){
+			setTimeout(function(){
+				//$("#message-text").val($(document).width() + ":" + $("#contens-login").width());
+				if($("#contens-login").width() > $(document).width()-41)
+					Interval = 0;
+				else
+					Interval = 100;
+				if($(document).width() <= 635){
+					$("#contens-login").width($(document).width()-40);
+				} else {
+					$("#contens-login").width(600);	
+				}
+				if($(document).width() <= 350)
+					$("#message-text").width($(document).width()-40);
+				else
+					$("#message-text").width(300);
+				Resize();
+			},Interval);			
+		}
+		Resize();
+	</script>
+</body>
+</html>

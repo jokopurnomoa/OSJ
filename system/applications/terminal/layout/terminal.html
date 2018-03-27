@@ -1,0 +1,23 @@
+<style type="text/css">
+#body-terminal{
+	resize:none;
+	border:none;
+	font-family: Consolas, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New;
+	font-size:15px;
+	font-weight:bold;
+	color:#FFF;
+	padding-left:5px;
+	background:rgba(0,0,0,0.9);
+}
+</style>
+<div id='terminal-container' class='ui-widget-content application-container'>
+   	<div class='ui-widget-header'>
+	   	<div class="application-header">
+            <div id='exit-terminal' class="application-exit"></div>
+            <div id='minimize-terminal' class="application-minimize"></div>
+       		<div id='maximize-terminal' class="application-maximize"></div>
+            <center><span>Terminal</span></center>
+       	</div>
+    </div>
+    <textarea id="body-terminal" onkeyup="GetTextElement('#terminal-text')"></textarea>
+</div>

@@ -1,0 +1,53 @@
+<style type="text/css">
+#music_player-container{
+	background:rgba(240,240,240,1);
+	background: #3a2a45;
+}
+#top-music-player{
+	display:block;
+	position:relative;
+	height:20px;
+	width:100%;
+	background:#111;
+	border-bottom:1px solid #111;
+}
+#menu-music-player{
+	display:block;
+	position:relative;
+	height:20px;
+}
+#body-music-player{
+    overflow: auto;
+    position: relative;
+    top:0px;
+    height: 91%;
+}
+#menu-visual-music-player{
+	height:80px;
+	width:100%;
+	background:url(system/images/header/lines.png);
+	border-bottom:1px solid #999;
+}
+.playlist-container{
+    position: relative;
+    top:120px;
+    left: 0px;
+    display: block;
+    overflow: hidden;
+}
+</style>
+<div id='music_player-container' class='ui-widget-content application-container'>
+   	<div class='ui-widget-header'>
+	   	<div class="application-header">
+            <div id='exit-music-player' class="application-exit"></div>
+            <div id='minimize-music-player' class="application-minimize"></div>
+       		<div id='maximize-music-player' class="application-maximize"></div>
+            <center><span>Music Player</span></center>
+       	</div>
+       	<!--<div id="menu-visual-music-player"></div>-->
+    </div>
+    <div id='body-music-player'>
+
+
+    </div>
+</div>

@@ -1,0 +1,79 @@
+<style type="text/css">
+#top-notepad{
+	display:block;
+	position:relative;
+	height:20px;
+	width:100%;
+	background:#111;
+	border-bottom:1px solid #111;
+}
+#menu-notepad{
+	display:block;
+	position:relative;
+	height:20px;
+}
+#body-notepad{
+	resize:none;
+	font-family:Verdana, Geneva, sans-serif;
+	border:none;
+	height:0%;
+	width:0%;
+	padding-left:5px;
+	font-size:12px;
+	z-index:-1;
+	text-align:justify;
+}
+#input-filename-notepad{
+	position:fixed;
+	display:block;
+	height:70px;
+	width:300px;
+	top:200px;
+	left:500px;
+	background:#FFF;
+	z-index:99;
+	padding:20px 10px;
+	border-radius:10px;
+	box-shadow:0px 5px 20px 1px rgba(0,0,0,0.9);
+	visibility:hidden;
+}
+#input-filename-notepad label{
+    font-size: 14px;
+}
+#filename-notepad-text{
+	margin-left:10px;
+	padding:0 5px;
+	width:200px;
+	height:20px;
+	border:1px solid #CCC;
+	border-radius:15px;
+}
+.notepad-button{
+	width:100px;
+	height:25px;
+	margin-top:20px;
+	float:right;
+	margin-right:20px;
+	position:relative;
+	right:-20px;
+	border:1px solid #CCC;
+}
+</style>
+<div id='notepad-container' class='ui-widget-content application-container'>
+   	<div class='ui-widget-header'>
+	   	<div class="application-header">
+            <div id='exit-notepad' class="application-exit"></div>
+            <div id='minimize-notepad' class="application-minimize"></div>
+       		<div id='maximize-notepad' class="application-maximize"></div>
+            <center><span>Notepad</span></center>
+       	</div>
+    </div>
+    <textarea id='body-notepad'></textarea>
+</div>
+    <div id='input-filename-notepad'>
+    	<label>File Name</label>
+        <input type='text' id='filename-notepad-text' />
+        <button onclick="Notepad.actionSaveFile()" class='notepad-button'>Save</button>
+        <button onclick="Notepad.cancelSaveFile()" class='notepad-button'>Cancel</button>
+    </div>
+

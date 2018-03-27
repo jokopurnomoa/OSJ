@@ -1,0 +1,13 @@
+{"name" : "Terminal",
+"width" : "600",
+"height" : "400",
+"posX" : "375",
+"posY" : "0",
+"image" : "system/applications/terminal/images/terminal.png",
+"iconId" : "desktop-programs-terminal",
+"programContainer" : "terminal-container",
+"programId" : "terminal",
+"programTop" : "top-terminal",
+"programMenu" : "menu-terminal",
+"programBody" : "body-terminal",
+"maximize" : false }
